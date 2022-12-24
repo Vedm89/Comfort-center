@@ -3670,11 +3670,6 @@ h6 {
 }
 
 @media (max-width: 32.8125rem) {
-  .tabs__body {
-    width: 60%;
-    right: 0;
-  }
-
   .tabs__body-item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
