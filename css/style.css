@@ -3226,11 +3226,6 @@ h6 {
 }
 
 @media (max-width: 96.875rem) {
-  .tabs__tab-1 {
-    top: 11.5740740741%;
-    right: 41.4012738854%;
-  }
-
 @supports (top: clamp( 3.75rem , -3.0873287671rem  +  8.2191780822vw , 4.875rem )) {
     .arrow-1 {
       top: clamp( 3.75rem , -3.0873287671rem  +  8.2191780822vw , 4.875rem );
