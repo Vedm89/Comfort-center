@@ -3346,14 +3346,6 @@ h6 {
     top: 20.5555555556%;
   }
 
-  .tabs__tab-3 {
-    top: 32.8703703704%;
-  }
-
-  .tabs__tab-4 {
-    top: 41.3888888889%;
-  }
-
   .tabs__body {
     top: 82.5925925926%;
     right: 30.3184713376%;
@@ -3424,11 +3416,6 @@ h6 {
 }
 
 @media (max-width: 61.99875em) {
-  .tabs__tab-1 {
-    top: 8.7962962963%;
-    right: 41.4012738854%;
-  }
-
   .program__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3458,20 +3445,6 @@ h6 {
       width: calc(18.125rem + 13.125 * (100vw - 20rem) / 25);
     }
 }
-}
-
-@media (max-width: 57.5rem) {
-  .tabs__tab-2 {
-    top: 17.5925925926%;
-  }
-
-  .tabs__tab-3 {
-    top: 30.0925925926%;
-  }
-
-  .tabs__tab-4 {
-    top: 39.537037037%;
-  }
 }
 
 @media (max-width: 52.5rem) {
@@ -3686,13 +3659,6 @@ h6 {
   }
 }
 
-@media (max-width: 29.99875em) {
-  .tabs__tab-1 {
-    top: 4.1666666667%;
-    right: 41.0828025478%;
-  }
-}
-
 @media (max-width: 28.75rem) {
   .info-locations {
     display: -webkit-box;
@@ -3709,20 +3675,6 @@ h6 {
 
   .info-locations__text {
     text-align: center;
-  }
-}
-
-@media (max-width: 25rem) {
-  .tabs__tab-2 {
-    top: 12.962962963%;
-  }
-
-  .tabs__tab-3 {
-    top: 25.9259259259%;
-  }
-
-  .tabs__tab-4 {
-    top: 36.1111111111%;
   }
 }
 
