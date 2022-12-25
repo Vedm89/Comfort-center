@@ -3325,27 +3325,15 @@ h6 {
     top: 82.5925925926%;
   }
 
-@supports (right: clamp( 23.75rem , -3.9772727273rem  +  36.3636363636vw , 26.25rem )) {
+@supports (right: clamp( 3.75rem , -3.3787128713rem  +  35.6435643564vw , 26.25rem )) {
     .tabs__body-4 {
-      right: clamp( 23.75rem , -3.9772727273rem  +  36.3636363636vw , 26.25rem );
+      right: clamp( 3.75rem , -3.3787128713rem  +  35.6435643564vw , 26.25rem );
     }
 }
 
-@supports not (right: clamp( 23.75rem , -3.9772727273rem  +  36.3636363636vw , 26.25rem )) {
+@supports not (right: clamp( 3.75rem , -3.3787128713rem  +  35.6435643564vw , 26.25rem )) {
     .tabs__body-4 {
-      right: calc(23.75rem + 2.5 * (100vw - 76.25rem) / 6.875);
-    }
-}
-
-@supports (right: clamp( 9.375rem , -18.005952381rem  +  54.7619047619vw , 23.75rem )) {
-    .tabs__body-4 {
-      right: clamp( 9.375rem , -18.005952381rem  +  54.7619047619vw , 23.75rem );
-    }
-}
-
-@supports not (right: clamp( 9.375rem , -18.005952381rem  +  54.7619047619vw , 23.75rem )) {
-    .tabs__body-4 {
-      right: calc(9.375rem + 14.375 * (100vw - 50rem) / 26.25);
+      right: calc(3.75rem + 22.5 * (100vw - 20rem) / 63.125);
     }
 }
 
