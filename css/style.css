@@ -2254,6 +2254,8 @@ h6 {
 
 .tabs__body img {
   position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .tabs__body-1 {
