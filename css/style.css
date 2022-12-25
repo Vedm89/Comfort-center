@@ -2252,9 +2252,37 @@ h6 {
   opacity: 0.9;
 }
 
+.tabs__body img {
+  position: absolute;
+}
+
 .tabs__body-1 {
   top: 4.4444444444%;
   right: 55.7961783439%;
+}
+
+@supports (top: clamp( 5.625rem , -2.3360655738rem  +  8.1967213115vw , 7.5rem )) {
+  .tabs__body-1 img {
+    top: clamp( 5.625rem , -2.3360655738rem  +  8.1967213115vw , 7.5rem );
+  }
+}
+
+@supports not (top: clamp( 5.625rem , -2.3360655738rem  +  8.1967213115vw , 7.5rem )) {
+  .tabs__body-1 img {
+    top: calc(5.625rem + 1.875 * (100vw - 97.125rem) / 22.875);
+  }
+}
+
+@supports (right: clamp( -9.375rem , -8.3563242784rem  +  -0.8488964346vw , -9.0625rem )) {
+  .tabs__body-1 img {
+    right: clamp( -9.375rem , -8.3563242784rem  +  -0.8488964346vw , -9.0625rem );
+  }
+}
+
+@supports not (right: clamp( -9.375rem , -8.3563242784rem  +  -0.8488964346vw , -9.0625rem )) {
+  .tabs__body-1 img {
+    right: calc(-9.0625rem + -0.3125 * (100vw - 83.1875rem) / 36.8125);
+  }
 }
 
 .tabs__body-title {
@@ -2355,32 +2383,6 @@ h6 {
 
 .tabs__arrow img {
   position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-@supports (top: clamp( 5.625rem , -2.3360655738rem  +  8.1967213115vw , 7.5rem )) {
-  .arrow-1 {
-    top: clamp( 5.625rem , -2.3360655738rem  +  8.1967213115vw , 7.5rem );
-  }
-}
-
-@supports not (top: clamp( 5.625rem , -2.3360655738rem  +  8.1967213115vw , 7.5rem )) {
-  .arrow-1 {
-    top: calc(5.625rem + 1.875 * (100vw - 97.125rem) / 22.875);
-  }
-}
-
-@supports (right: clamp( -9.375rem , -8.3563242784rem  +  -0.8488964346vw , -9.0625rem )) {
-  .arrow-1 {
-    right: clamp( -9.375rem , -8.3563242784rem  +  -0.8488964346vw , -9.0625rem );
-  }
-}
-
-@supports not (right: clamp( -9.375rem , -8.3563242784rem  +  -0.8488964346vw , -9.0625rem )) {
-  .arrow-1 {
-    right: calc(-9.0625rem + -0.3125 * (100vw - 83.1875rem) / 36.8125);
-  }
 }
 
 .arrow-2 {
@@ -3241,13 +3243,13 @@ h6 {
 
 @media (max-width: 96.875rem) {
 @supports (top: clamp( 3.75rem , -3.0873287671rem  +  8.2191780822vw , 4.875rem )) {
-    .arrow-1 {
+    .tabs__body-1 img {
       top: clamp( 3.75rem , -3.0873287671rem  +  8.2191780822vw , 4.875rem );
     }
 }
 
 @supports not (top: clamp( 3.75rem , -3.0873287671rem  +  8.2191780822vw , 4.875rem )) {
-    .arrow-1 {
+    .tabs__body-1 img {
       top: calc(3.75rem + 1.125 * (100vw - 83.1875rem) / 13.6875);
     }
 }
@@ -3292,6 +3294,10 @@ h6 {
 }
 
 @media (max-width: 83.125rem) {
+  .tabs__body img {
+    display: none;
+  }
+
   .tabs__body-1 {
     top: 82.5925925926%;
     right: 30.3184713376%;
@@ -3310,10 +3316,6 @@ h6 {
   .tabs__body-4 {
     top: 82.5925925926%;
     right: 30.3184713376%;
-  }
-
-  .tabs__arrow {
-    display: none;
   }
 
 @supports (margin-top: clamp( 7.5rem , 31.0215053763rem  +  -30.1075268817vw , 25rem )) {
